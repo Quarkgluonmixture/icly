@@ -24,3 +24,17 @@ function showPhoto(photoUrl) {
         document.body.removeChild(modal);
     });
 }
+// 获取播放按钮和音频元素
+const playButton = document.getElementById('play-music');
+const audio = document.getElementById('bg-music');
+
+// 为播放按钮添加点击事件
+playButton.addEventListener('click', function () {
+    audio.play()
+        .then(() => {
+            console.log("音乐播放成功");
+        })
+        .catch((error) => {
+            console.error("音乐播放被阻止：", error);
+        });
+});
