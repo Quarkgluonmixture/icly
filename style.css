@@ -17,7 +17,13 @@ h1 {
     height: 500px;
     margin: 0 auto;
     background: url('images/tree.jpg') no-repeat center center;
-    background-size: contain;
+    background-size: contain; 
+   background-position: center; /* 背景图片居中显示 */
+    background-repeat: no-repeat; /* 不重复背景图片 */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* 设置 body 的高度为屏幕高度 */
+
 }
 
 .gift {
