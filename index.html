@@ -4,25 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>圣诞节祝福</title>
-    <link rel="stylesheet" href="style.css"> <!-- 连接CSS文件 -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1老婆，圣诞快乐呀！</h1>
+
+    <!-- 圣诞节祝福标题 -->
+    <h1>亲爱的[女朋友名字]，圣诞快乐！</h1>
 
     <!-- 圣诞树部分 -->
     <div class="tree">
-        <!-- 每个礼物盒 -->
         <div class="gift gift1" onclick="showPhoto('images/photo1.jpg')"></div>
         <div class="gift gift2" onclick="showPhoto('images/photo2.jpg')"></div>
         <div class="gift gift3" onclick="showPhoto('images/photo3.jpg')"></div>
     </div>
 
-    <!-- 背景音乐 -->
+    <!-- 彩灯部分 -->
+    <ul class="lightrope">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <!-- 可以根据需要添加更多的<li> -->
+    </ul>
+
+    <!-- 气球部分 -->
+    <div id="the-wrap">
+        <div class="ball-wrapper">
+            <div class="string"></div>
+            <div class="ring"></div>
+            <div class="button"></div>
+            <div class="red-ball"></div>
+        </div>
+        <div class="ball-wrapper">
+            <div class="string"></div>
+            <div class="ring"></div>
+            <div class="button"></div>
+            <div class="green-ball"></div>
+        </div>
+        <div class="ball-wrapper">
+            <div class="string"></div>
+            <div class="ring"></div>
+            <div class="button"></div>
+            <div class="blue-ball"></div>
+        </div>
+        <div class="ball-wrapper">
+            <div class="string"></div>
+            <div class="ring"></div>
+            <div class="button"></div>
+            <div class="white-ball"></div>
+        </div>
+    </div>
+
     <audio autoplay loop>
         <source src="music/christmas_song.mp3" type="audio/mpeg">
         您的浏览器不支持音频元素。
     </audio>
 
-    <script src="script.js"></script> <!-- 连接JavaScript文件 -->
+    <script src="script.js"></script>
+
 </body>
 </html>
