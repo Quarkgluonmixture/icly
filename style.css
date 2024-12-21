@@ -13,17 +13,10 @@ h1 {
 
 .tree {
     position: relative;
-    width: 300px;
-    height: 500px;
-    margin: 0 auto;
-    background: url('images/tree.jpg');
-    background-size: contain; 
-   background-position: center; /* 背景图片居中显示 */
-    background-repeat: no-repeat; /* 不重复背景图片 */
-    margin: 0;
-    padding: 0;
-    height: 100vh; /* 设置 body 的高度为屏幕高度 */
-
+    width: 100%; /* 使树的宽度适应屏幕 */
+    height: 100vh; /* 使树的高度填满屏幕 */
+    background: url('images/tree.jpg') no-repeat center center; 
+    background-size: cover;  /* 改为cover使图片填满屏幕 */
 }
 
 .gift {
