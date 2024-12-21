@@ -1,9 +1,12 @@
 body {
-    background-color: #f0f8ff;  /* 背景颜色 */
-    font-family: Arial, sans-serif; /* 字体 */
-    text-align: center;
-    padding: 50px;
+    background-image: url('images/tree.jpg');  /* 设置背景图片 */
+    background-size: cover;  /* 背景图片覆盖整个页面，保持比例 */
+    background-position: center center;  /* 背景图片居中 */
+    background-repeat: no-repeat;  /* 不重复背景图片 */
     margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;  /* 字体 */
+    text-align: center;
     color: #333;
 }
 
@@ -13,10 +16,11 @@ h1 {
 
 .tree {
     position: relative;
-    width: 100%; /* 使树的宽度适应屏幕 */
-    height: 100vh; /* 使树的高度填满屏幕 */
-    background: url('images/tree.jpg') no-repeat center center; 
-    background-size: cover;  /* 改为cover使图片填满屏幕 */
+    width: 100%;  /* 树的宽度根据屏幕自适应 */
+    height: 100vh;  /* 树的高度填充整个屏幕 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gift {
