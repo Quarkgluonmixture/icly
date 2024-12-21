@@ -1,3 +1,4 @@
+/* 设置网页背景 */
 body {
     background-image: url('images/tree.jpg'); /* 确保路径正确 */
     background-size: cover; /* 背景图片覆盖整个页面 */
@@ -11,10 +12,12 @@ body {
     height: 100vh; /* 页面高度为视窗高度 */
 }
 
+/* 标题样式 */
 h1 {
     color: #d80000;  /* 标题颜色 */
 }
 
+/* 圣诞树容器 */
 .tree {
     position: relative;
     width: 100%;
@@ -25,7 +28,7 @@ h1 {
     align-items: center;
 }
 
-
+/* 礼物样式 */
 .gift {
     position: absolute;
     width: 50px;
@@ -36,10 +39,31 @@ h1 {
     transition: transform 0.3s ease;  /* 动画效果 */
 }
 
+/* 鼠标悬停礼物的动画 */
 .gift:hover {
     transform: scale(1.1);  /* 鼠标悬停时，礼物盒会放大 */
 }
 
+/* 各个礼物的位置 */
 .gift1 { top: 100px; left: 50px; }
 .gift2 { top: 120px; left: 120px; }
 .gift3 { top: 160px; left: 180px; }
+
+/* 播放按钮样式 */
+#play-music {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #d80000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10; /* 确保按钮显示在最上层 */
+}
+
+#play-music:hover {
+    background-color: #a00000;
+}
