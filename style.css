@@ -33,21 +33,36 @@ h1 {
     position: absolute;
     width: 50px;
     height: 50px;
-    background-color: red;
-    border-radius: 8px;
+    background-size: cover; /* 背景图片填充整个盒子 */
+    background-position: center; /* 背景图片居中 */
+    background-repeat: no-repeat; /* 背景图片不重复 */
     cursor: pointer;
-    transition: transform 0.3s ease;  /* 动画效果 */
+    transition: transform 0.3s ease; /* 鼠标悬停动画效果 */
 }
 
 /* 鼠标悬停礼物的动画 */
 .gift:hover {
-    transform: scale(1.1);  /* 鼠标悬停时，礼物盒会放大 */
+    transform: scale(1.1); /* 鼠标悬停时礼物盒放大 */
 }
 
-/* 各个礼物的位置 */
-.gift1 { top: 100px; left: 50px; }
-.gift2 { top: 120px; left: 120px; }
-.gift3 { top: 160px; left: 180px; }
+/* 各个礼物的位置和图片 */
+.gift1 {
+    top: 100px;
+    left: 50px;
+    background-image: url('images/photo4.png'); /* 礼物图片1 */
+}
+
+.gift2 {
+    top: 120px;
+    left: 120px;
+    background-image: url('images/photo5.png'); /* 礼物图片2 */
+}
+
+.gift3 {
+    top: 160px;
+    left: 180px;
+    background-image: url('images/photo6.png'); /* 礼物图片3 */
+}
 
 /* 播放按钮样式 */
 #play-music {
