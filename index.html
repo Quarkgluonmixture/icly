@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css"> <!-- 连接CSS文件 -->
 </head>
 <body>
-    <h1>亲老婆，圣诞快乐！</h1>
+    <!-- 删除旧的文字标题 -->
+    <!-- <h1>亲老婆，圣诞快乐！</h1> -->
 
     <!-- 圣诞树部分 -->
     <div class="tree">
@@ -17,13 +18,17 @@
         <div class="gift gift3" onclick="showPhoto('images/photo3.jpg')"></div>
     </div>
 
-    <!-- 背景音乐 -->
- <audio id="bg-music" loop>
-    <source src="music/christmas_song.mp3" type="audio/mpeg">
-    您的浏览器不支持音频元素。
-</audio>
-<button id="play-music">宝宝点我！</button>
+    <!-- 祝福语图片 -->
+    <div class="greeting">
+        <img src="images/photo7.png" alt="圣诞祝福语">
+    </div>
 
+    <!-- 背景音乐 -->
+    <audio id="bg-music" loop>
+        <source src="music/christmas_song.mp3" type="audio/mpeg">
+        您的浏览器不支持音频元素。
+    </audio>
+    <button id="play-music">宝宝点我！</button>
 
     <script src="script.js"></script> <!-- 连接JavaScript文件 -->
 </body>
