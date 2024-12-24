@@ -81,7 +81,7 @@ body {
 /* 祝福语图片样式 */
 .greeting {
     position: fixed; /* 固定在屏幕底部 */
-    bottom: 20px; /* 距离屏幕底部20px */
+    bottom: 50px; /* 距离屏幕底部20px */
     width: 100%; /* 占满屏幕宽度 */
     text-align: center; /* 图片居中 */
     z-index: 10; /* 确保图片显示在最上层 */
