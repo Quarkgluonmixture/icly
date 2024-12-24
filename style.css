@@ -12,11 +12,6 @@ body {
     height: 100vh; /* 页面高度为视窗高度 */
 }
 
-/* 标题样式 */
-h1 {
-    color: #d80000;  /* 标题颜色 */
-}
-
 /* 圣诞树容器 */
 .tree {
     position: relative;
@@ -31,8 +26,8 @@ h1 {
 /* 礼物样式 */
 .gift {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 100px; /* 礼物盒宽度 */
+    height: 100px; /* 礼物盒高度 */
     background-size: cover; /* 背景图片填充整个盒子 */
     background-position: center; /* 背景图片居中 */
     background-repeat: no-repeat; /* 背景图片不重复 */
@@ -81,4 +76,19 @@ h1 {
 
 #play-music:hover {
     background-color: #a00000;
+}
+
+/* 祝福语图片样式 */
+.greeting {
+    position: fixed; /* 固定在屏幕底部 */
+    bottom: 20px; /* 距离屏幕底部20px */
+    width: 100%; /* 占满屏幕宽度 */
+    text-align: center; /* 图片居中 */
+    z-index: 10; /* 确保图片显示在最上层 */
+}
+
+.greeting img {
+    max-width: 60%; /* 图片最大宽度为屏幕宽度的60% */
+    height: auto; /* 按比例缩放图片 */
+    display: inline-block; /* 图片居中显示 */
 }
