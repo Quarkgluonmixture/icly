@@ -42,19 +42,19 @@ body {
 
 /* 各个礼物的位置和图片 */
 .gift1 {
-    top: 100px;
+    bottom: 100px;
     left: 50px;
     background-image: url('images/photo4.png'); /* 礼物图片1 */
 }
 
 .gift2 {
-    top: 210px;
+    bottom: 210px;
     left: 50px;
     background-image: url('images/photo5.png'); /* 礼物图片2 */
 }
 
 .gift3 {
-    top: 320px;
+    bottom: 320px;
     left: 50px;
     background-image: url('images/photo6.png'); /* 礼物图片3 */
 }
@@ -81,7 +81,7 @@ body {
 /* 祝福语图片样式 */
 .greeting {
     position: fixed; /* 固定在屏幕底部 */
-    bottom: 50px; /* 距离屏幕底部20px */
+    top: 50px; /* 距离屏幕底部20px */
     width: 100%; /* 占满屏幕宽度 */
     text-align: center; /* 图片居中 */
     z-index: 10; /* 确保图片显示在最上层 */
