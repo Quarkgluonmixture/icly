@@ -42,19 +42,19 @@ body {
 
 /* 各个礼物的位置和图片 */
 .gift1 {
-    bottom: 100px;
+    bottom: 30px;
     left: 50px;
     background-image: url('images/photo4.png'); /* 礼物图片1 */
 }
 
 .gift2 {
-    bottom: 210px;
+    bottom: 140px;
     left: 50px;
     background-image: url('images/photo5.png'); /* 礼物图片2 */
 }
 
 .gift3 {
-    bottom: 320px;
+    bottom: 260px;
     left: 50px;
     background-image: url('images/photo6.png'); /* 礼物图片3 */
 }
